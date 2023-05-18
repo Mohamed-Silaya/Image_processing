@@ -1,21 +1,46 @@
-# Image_processing
+<div align="center">
+  <img src="https://techsparks.co.in/wp-content/uploads/2020/12/image-processing.jpg" width="450"/>
+</div>
+
+
+
+<div id="badges" align="center">
+  <a href="[https://www.linkedin.com/in/mohamed-samir-8b585b14a/](https://github.com/opencv/opencv)">
+    <img src="https://img.shields.io/badge/OpenCv-Profile-informational?style=flat&logo=OpenCv&logoColor=white&color=0D76A8" alt="OpenCv Badge"/>
+  </a>
+   <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-Profile-informational?style=flat&logo=Python&logoColor=white&color=0D76A8" alt="python Badge"/>
+  </a>
+   <a href="https://numpy.org/">
+    <img src="https://img.shields.io/badge/Numpy-Profile-informational?style=flat&logo=Numpy&logoColor=white&color=0D76A8" alt="Numpy Badge"/>
+  </a>
+   <a href="https://matplotlib.org/">
+    <img src="https://img.shields.io/badge/MatPlotlib-Profile-informational?style=flat&logo=Matplotlib&logoColor=white&color=0D76A8" alt="matPlotlib Badge"/>
+  </a>   
+   </div>
+   
+<div align="center">
+   <h1> :eye_speech_bubble:	Image_processing :</h1>
+</div>
+
+
+
+
 - [Q1-Given an image file stored on the computer write a program to read it and
 store it in different format (extension) show the effect on the image size on the
-disk.]() 
+disk.](https://github.com/Mohamed-Silaya/Image_processing/blob/main/q1.py) 
 ### desription
-<<<<<<< HEAD
    - In this program, the file paths for the input and output directories are set in the input_dir and output_dir variables, respectively. The os.path.join function is used to construct the full file paths for the input and output image files.
 
  - The Image module is used to open the image file from the input directory, and the save method is used to save the image in the output directory with a new filename and extension.
 
   - The program gets the sizes of the original and converted image files using os.path.getsize and prints the size information to the console. Note that you will need to replace `"/path/to/input/directory"` and `"/path/to/output/directory"` with the actual file paths for your input and output directories.
-=======
+
         1- In this program, the file paths for the input and output directories are set in the input_dir and output_dir variables, respectively. The os.path.join function is used to construct the full file paths for the input and output image files.
 
         2- The Image module is used to open the image file from the input directory, and the save method is used to save the image in the output directory with a new filename and extension.
 
         3- The program gets the sizes of the original and converted image files using os.path.getsize and prints the size information to the console. Note that you will need to replace `"/path/to/input/directory"` and `"/path/to/output/directory"` with the actual file paths for your input and output directories.
->>>>>>> 4ab2fe0762ae08cbc7d2815f76e90f6f65d886aa
 
  - *NOTE*  
         - the file paths in this code use absolute paths, which are specific to the file system on your computer. If you run this code on a different computer, you may need to adjust the file paths to match the file system on that computer.
@@ -24,7 +49,7 @@ disk.]()
 
 - [Q2. Write a program to read an image and change its type from color image to
 gray scale image and to binary image and save the output gray scale and binary
-images show the effect on the image size on the disk.]()
+images show the effect on the image size on the disk.](https://github.com/Mohamed-Silaya/Image_processing/blob/main/q2.py)
 ### desription
 
   - In this program, the Image module from PIL is used to open the input image file "example.jpg". The convert method is called on the input_image object to convert it to grayscale ('L') and binary ('1') images, which are stored in the grayscale_image and binary_image objects, respectively. The save method is then called on each of these objects to save the grayscale and binary images to disk as PNG files.
@@ -35,7 +60,7 @@ images show the effect on the image size on the disk.]()
 
 - [Q3. Write a program to read an image resize it to be half the width and height.
 The program should read the file and print the width, height and resolution
-before and after resize.]()
+before and after resize.](https://github.com/Mohamed-Silaya/Image_processing/blob/main/q3.py)
 
 ### description
 
@@ -47,7 +72,7 @@ before and after resize.]()
 
  ---
  - [Q4. Write a program to read a color image and split it into R, G, B channels.
-Display each of them and store them as gray scale image to the computer.]()
+Display each of them and store them as gray scale image to the computer.](https://github.com/Mohamed-Silaya/Image_processing/blob/main/q4.py)
 
 ### description
  -  In this program, the Image module from PIL is used to open the input image file "Old-Pic.png". The split method is called on the input_image object to split the image into its R, G, and B channels, which are stored in the r_channel, g_channel, and b_channel objects, respectively.
@@ -72,7 +97,7 @@ Display each of them and store them as gray scale image to the computer.]()
 ---
  - [Q5. Write a program to read an image convert to gray scale then calculate and
 show its histogram. (Apply this program twice first using open cv function for
-histogram and second without using the function)]()
+histogram and second without using the function)](https://github.com/Mohamed-Silaya/Image_processing/blob/main/q5.py)
 
 ### description
 
@@ -85,6 +110,7 @@ histogram and second without using the function)]()
 -  The histogram is plotted using the plot function from OpenCV. The resulting histogram is shown using the show method.
 
 *NOTE*
+
  that the two histograms may look slightly different due to differences in the way that the hist and plot functions calculate histograms. However, both histograms should provide a good representation of the grayscale image's pixel intensity distribution.
 
  ---
@@ -107,12 +133,14 @@ different values, can you manually estimate the best threshold.]()
  -  The imshow function from OpenCV is then called on the binary_image object to display the binary image. The user can experiment with different threshold values by entering different values when prompted, and the effect of the thresholding can be observed on the resulting binary image.
 
 *NOTE*
+<h4>
 Determining the best threshold value for a given image is often an empirical process, and it depends on the specific characteristics of the image being processed. A common approach is to try a range of threshold values and visually inspect the resulting binary images to find the threshold that produces the best segmentation result. Another approach is to use automatic thresholding methods that aim to find the optimal threshold value based on some objective criterion, such as maximizing between-class variance or minimizing error rates.
----
+</h4>
 
+---
 - [Q7. Repeat the previous question using automatic thresholding. . (apply this
 program twice first using open cv function for automatic threshold selection and
-second without using the function). Apply the function by yourself.]()
+second without using the function). Apply the function by yourself.](https://github.com/Mohamed-Silaya/Image_processing/blob/main/q7.py)
 
 ### description
 
@@ -127,7 +155,7 @@ second without using the function). Apply the function by yourself.]()
  -  The resulting binary images are displayed using the imshow function from OpenCV. The user can compare the binary images produced by the two methods and observe the differences in the segmentation results.
 
  ---
-  [Q8. Given the following image file write a program to:]()
+  [Q8. Given the following image file write a program to:](https://github.com/Mohamed-Silaya/Image_processing/blob/main/q8.py)
 
 -  A) Apply a 3 X 3 median filter on the image
 -  B)Apply a 5 X 5 median filter on the image
@@ -150,7 +178,7 @@ Compare the results of mean and median filter and different filter size
 
 ---
 [Q9. Given the following image file write a program to read the image and find
-the resolution of this image, the bit depth of this image.]()
+the resolution of this image, the bit depth of this image.](https://github.com/Mohamed-Silaya/Image_processing/blob/main/q9.py)
 - Calculate and draw the histogram of the image (gray scale image).
 - Calculate and draw the normalized histogram
 - Calculate and draw the cumulative histogram.
@@ -175,7 +203,7 @@ The results of the program can be used to analyze the characteristics of the inp
 
 ---
 [Q10. Write a program to read an image, convert it to grayscale image and
-divide the image into batches (parts)]()
+divide the image into batches (parts)](https://github.com/Mohamed-Silaya/Image_processing/blob/main/q10.py)
 - The program should ask user about the
 batch size. (Display and store the batches).
 
@@ -192,3 +220,7 @@ batch size. (Display and store the batches).
 *NOTE* :
 
  The results of the program can be used to divide a large image into smaller batches for processing or analysis, or to perform batch operations on the image data.
+ 
+ ## Author
+
+ - [Mohamed Silaya](https://github.com/Mohamed-Silaya)
