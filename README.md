@@ -26,6 +26,7 @@
 ---
 |project | description| links|
 |----|----|----|
+|corner detection|Harris corner detection|[link](https://github.com/Mohamed-Silaya/Image_processing/tree/main/mini_project/corners)|
 |Edge Detection| Sobel ,Prewitt and canny|[link](https://github.com/Mohamed-Silaya/Image_processing/tree/main/mini_project/Edge_detection)|
 |q1| Different formats(extentions|[link](https://github.com/Mohamed-Silaya/Image_processing/blob/main/q1%20to%20q%2010/q1.py)|
 |q2| change type| [link](https://github.com/Mohamed-Silaya/Image_processing/blob/main/q1%20to%20q%2010/q2.py)|
